@@ -54,7 +54,7 @@ public class C3 {
 		if(letter=='a'||letter=='e'||letter=='i'||letter=='o'||letter=='u') {
 			isVowel=true;
 		}
-		System.out.println("Hi The Given Letter is in "+caseMessage+" and it's "+(isVowel==true? "Vowel":"Not Vowel"));
+		System.out.println("Hi The Given Letter is in "+caseMessage+" and it's "+(isVowel) ? "Vowel":"Not Vowel"));
 	}
 
 	private static void displayFirstSecondDigit() {
