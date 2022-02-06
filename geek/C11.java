@@ -61,5 +61,4 @@ public class C11 {
 	private static void productOfDecimalAndInt(double d, int i) {
 		System.out.println("Result is: "+(float)d*i);	
 	}
-	
 }
