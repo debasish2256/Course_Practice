@@ -1,6 +1,6 @@
 package geek;
 
-/*WAP to caluclate no. of digits in a number entered by user.
+/*WAP to calculate no. of digits in a number entered by user.
 Apply do while loop to calculat factorial of a number such that, program asks  user, if he wants to continue, if yes, program should run again
 WAP to creat a fuction that check if no. is odd or even. call this function from main method*/
 
@@ -17,7 +17,7 @@ public class C12 {
 		int	number=sc.nextInt();
 		System.out.println(binaryToDecimal(number));
 		System.out.println(binaryToDecimalOneLiner(number));
-		decimalToBinary(12);
+		decimalToBinary(53);
 		System.out.println(decimalToBinaryOneLiner(12));
 		System.out.println(findSquareRoot(new Scanner(System.in).nextInt()));
 //		H/W
@@ -25,8 +25,11 @@ public class C12 {
 		findFactorial();
 		System.out.println(isEvenOrOdd(79)?"Number is Even":"Number is Odd");
 		
+		
 	}
 	
+
+
 	private static void findFactorial() {
 		int fact=1,num,i=1;
 		System.out.print("Enter a number: ");
@@ -70,12 +73,13 @@ public class C12 {
 
 
 	private static void decimalToBinary(int num) {
-		StringBuffer res=new StringBuffer();
+		StringBuffer result=new StringBuffer();
 		while (num > 0) {
-			res.append(num%2);
+			result.append(num%2);
 			num/= 2;
 		}
-		System.out.println(res.reverse());
+		System.out.println(result.reverse());
+		
 	}
 
 	private static int binaryToDecimalOneLiner(int num) {
