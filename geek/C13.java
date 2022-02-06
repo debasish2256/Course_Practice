@@ -50,8 +50,7 @@ public class C13 {
 	
 
 	private static String checkIfLesserOrGreater(int num) {
-		String msg=(num<10 && num <5)?"Number is less then 10\nNumber less than 5":(num>10 && num>5)? "Number is greater then 10\nNumber Greater than 5":"Number is less then 10\nNumber is Greater than 5";
-		return msg;
+		return (num<10 && num <5)?"Number is less then 10\nNumber less than 5":(num>10 && num>5)? "Number is greater then 10\nNumber Greater than 5":(num==5)?"Number Equals to 5":(num==10)?"Number Equlas to 10":"Number is less then 10\nNumber is Greater than 5";
 	}
 
 	
