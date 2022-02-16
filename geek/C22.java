@@ -3,7 +3,7 @@ package geek;
 import java.util.Arrays;
 
 /*"1. add two 2D matrices to get the result matrix (Add the elements at corresponding rows and columns positions)
-2. Given an M × N integer matrix, print it in spiral order
+2. Given an M Ã— N integer matrix, print it in spiral order
    Input:
  
 	[  1   2   3   4  5 ]
@@ -34,10 +34,10 @@ import java.util.Arrays;
 */
 public class C22 {
 	public static void main(String[] args) {
-		/*printFirstSecondDiagonal(new int[][] {{1,2,3},{4,5,6},{7,8,9}});
+		printFirstSecondDiagonal(new int[][] {{1,2,3},{4,5,6},{7,8,9}});
 		addTwoDMatrix(new int[][]{{1,3,4},{2,4,3},{3,4,5}},new int[][]{{1,3,4},{2,4,3},{1,2,4}});
 		printMatrixInSpiralOrder(new int[][]{
-          0  { 1,  2,  3, 4,  5},
+       /* 0  { 1,  2,  3, 4,  5},
           1  {16, 17, 18, 19, 6},
           2  {15, 24, 25, 20, 7},
           3  {14, 23, 22, 21, 8},
