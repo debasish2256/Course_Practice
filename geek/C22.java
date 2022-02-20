@@ -35,14 +35,18 @@ import java.util.Arrays;
 public class C22 {
 	public static void main(String[] args) {
 		printFirstSecondDiagonal(new int[][] {{1,2,3},{4,5,6},{7,8,9}});
-		addTwoDMatrix(new int[][]{{1,3,4},{2,4,3},{3,4,5}},new int[][]{{1,3,4},{2,4,3},{1,2,4}});
+		addTwoDMatrix(new int[][]{{1,3,4},
+					  {2,4,3},
+					  {3,4,5}},	new int[][]{{1,3,4},
+							     	    {2,4,3},
+							            {1,2,4}});
 		printMatrixInSpiralOrder(new int[][]{
-       /* 0  { 1,  2,  3, 4,  5},
-          1  {16, 17, 18, 19, 6},
-          2  {15, 24, 25, 20, 7},
-          3  {14, 23, 22, 21, 8},
-          4  {13, 12, 11, 10, 9}
-        });*/
+          /*0*/  { 1,  2,  3, 4,  5},
+          /*1*/  {16, 17, 18, 19, 6},
+          /*2*/  {15, 24, 25, 20, 7},
+          /*3*/  {14, 23, 22, 21, 8},
+          /*4*/  {13, 12, 11, 10, 9}
+        });
 		/*convertMatrix(new int[][]{
             { 1, 1, 0, 1, 1 },
             { 1, 1, 1, 1, 1 },
@@ -60,30 +64,31 @@ public class C22 {
 	}
 
 	private static void convertMatrix(int[][] mat) {
-		if(mat.length==0)	return;
-		int row=mat.length;
-		int col=mat[0].length;
-		for(int i=0;i<row;i++) {
-			for(int j=0;j<col;j++) {
-				if(mat[i][j]==0) {
-					for(int k=0;k<row;k++) {
-						if(mat[i][k]!=0)
-							mat[i][k]=-1;
+		if (mat.length == 0)
+			return;
+		int row = mat.length;
+		int col = mat[0].length;
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				if (mat[i][j] == 0) {
+					for (int k = 0; k < row; k++) {
+						if (mat[i][k] != 0)
+							mat[i][k] = -1;
 					}
-					for (int l = 0; l < col; l++){
-			            if (mat[l][j] != 0)
-			                mat[l][j] = -1;
-			        }
+					for (int l = 0; l < col; l++) {
+						if (mat[l][j] != 0)
+							mat[l][j] = -1;
+					}
 				}
 			}
 		}
-		for (int i = 0; i < row; i++){
-            for (int j = 0; j < col; j++){
-                if (mat[i][j] == -1) {
-                    mat[i][j] = 0;
-                }
-            }
-        }
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				if (mat[i][j] == -1) {
+					mat[i][j] = 0;
+				}
+			}
+		}
 		print2DMatrix(mat);
 	}
 
