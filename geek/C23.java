@@ -6,24 +6,29 @@ public class C23 {
 	public static void main(String[] args) {
 		/*System.out.println(isMatrixIdentical(new int[][] { { 1, 2, 3 }, { 8, 4, 6 }, { 4, 5, 7 } },
 				new int[][] { { 1, 2, 3 }, { 8, 4, 6 }, { 4, 5, 7 } }));
-		printSumOfRowsAndColumns(new int[][] {  {1,2,1},
+		printSumOfRowsAndColumns(new int[][] {  					{1,2,1},
 												{4,5,1},
 												{7,8,1},
 												{1,1,1},
 												{4,5,1}});
 		System.out.println(isIndentityMatrix(new int[][] { 
 			{1, 0, 0},    
-            {0, 1, 0},    
-            {0, 0, 1}  }));
+            		{0, 1, 0},    
+            		{0, 0, 1}  	}));
 		
 		System.out.println(isSymmetric(new int[][] {
 			{6,5,2},
 			{5,0,9},
-			{2,9,3}}));*/
+			{2,9,3}		}));*/
 		//HW
-		frequencyOfOddAndEven(new int[][] {{1,3,5},{2,4,1},{7,8,9}});
-		System.out.println("Sum is: "+sumOfAntiDiagonalMatrix(new int[][] {{1,5,7},{2,6,8},{5,8,2}}));
-		printMatrixRow(new String[][] {{"Hello","Geekster"},{"Good","Day"}});
+		frequencyOfOddAndEven(new int[][] {{1,3,5},
+						   {2,4,1},
+						   {7,8,9}});
+		System.out.println("Sum is: "+sumOfAntiDiagonalMatrix(new int[][] {{1,5,7},
+										   {2,6,8},
+										   {5,8,2}}));
+		printMatrixRow(new String[][] {{"Hello","Geekster"},
+					       {"Good","Day"}});
 		
 	}
 
