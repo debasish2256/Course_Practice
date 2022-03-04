@@ -63,6 +63,6 @@ public class C30 {
 				count++;
 			}
 		}
-		System.out.print(count);
+// 		System.out.print(count); 
 	}
 }
