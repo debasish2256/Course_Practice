@@ -19,7 +19,12 @@ public class hw_06_April {
 		int[][]arr1={ {0, 0, 0, 1},{0, 1, 1, 1},{1, 1, 0, 0},{0, 0, 0, 0}};
 		
 		System.out.println(rowWithMax1s(arr1));
-
+		int A[][] = { {1, 1, 1, 1},
+                {2, 2, 2, 2},
+                {3, 3, 3, 3},
+                {4, 4, 4, 4}};
+		int B[][] = new int[A.length][A[0].length];
+		transpose(A, B);
 
 	}
 
@@ -64,5 +69,14 @@ public class hw_06_April {
 		}
 		
 	}
+	
+    static void transpose(int A[][], int B[][])
+    {
+        int i, j,N=A.length;
+        for (i = 0; i < N; i++)
+            for (j = 0; j < N; j++)
+                B[i][j] = A[j][i];
+        System.out.println(Arrays.deepToString(B));
+    }
 
 }
